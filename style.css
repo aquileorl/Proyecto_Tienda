@@ -168,7 +168,7 @@ span {
     flex-wrap: wrap;
     gap: 20px;
     overflow: hidden;
-    justify-content: start;
+    justify-content: center;
     padding: 10px;
     height: fit-content;
     
@@ -299,6 +299,8 @@ aside a:hover {
     
 }
 
+
+
 @media (max-width: 375px) {
 
     .menu-info {
@@ -317,6 +319,7 @@ aside a:hover {
     header {
         display: block;
         justify-content: center;
+        min-width: fit-content;
     }
 
     .global-container {
@@ -328,6 +331,8 @@ aside a:hover {
 
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+
+        min-width: fit-content;
     }
 
     .products {
@@ -338,7 +343,7 @@ aside a:hover {
 
 }
 
-@media (min-width:346px) and (max-width:745px) {
+@media (min-width:346px) and (max-width:768px) {
 
     .logo {
         display: none;
@@ -347,6 +352,8 @@ aside a:hover {
     header {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        
         
     }
 
@@ -363,4 +370,47 @@ aside a:hover {
     .products {
         justify-content: center;
     }
+
+    .menu-info {
+        display: block;
+    }
+
+    .menu-user {
+        display: block;
+    }
+
+    .nav-menu {
+        display: block;
+    }
+}
+
+
+@media (min-width:769px) and (max-width:1120px) {
+
+    .logo {
+        display: none;
+    }
+
+  
+
+    .global-container {
+        display: grid;
+        grid-template-areas: 
+        "description"
+        "products"
+        "aside";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .products {
+        justify-content: center;
+    }
+
+    .header-logo {
+        display: block;
+    }
+
+    
+
 }
