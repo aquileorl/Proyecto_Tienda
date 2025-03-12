@@ -160,18 +160,15 @@ span {
     grid-area: description;
 }
 
-.products {
-    grid-area: products;
-    margin-top: 30px;
 
+
+.products-list {
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    overflow: hidden;
     justify-content: center;
     padding: 10px;
-    height: fit-content;
-    
 }
 
 aside{
